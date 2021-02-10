@@ -4,7 +4,8 @@
     "sources": [
         "scss/styles.scss",
         "scss/_reset.scss",
-        "scss/_grid.scss"
+        "scss/_grid.scss",
+        "scss/_variables-and-mixins.scss"
     ],
     "names": [],
     "file": "styles.css"
