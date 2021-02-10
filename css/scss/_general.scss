@@ -1,0 +1,38 @@
+body {
+  background-color: $light-beige;
+  border: 10px solid $medium-beige;
+  color: $gray;
+  @include d(s) {
+    border: none;
+  }
+}
+
+p {
+  @include type-1(18);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.title {
+  @include type-1(18);
+  text-transform: uppercase;
+  @include d(s) {
+    margin-bottom: 40px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 2px;
+    float: right;
+    background-color: $gray;
+    margin-top: 14px;
+    @include d(m) {
+      width: 60%;
+    }
+  }
+}

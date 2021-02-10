@@ -222,4 +222,56 @@ table {
   clear: both;
   display: table;
 }
+
+body {
+  background-color: #edece4;
+  border: 10px solid #cbc6b9;
+  color: #2a2426;
+}
+
+@media screen and (max-width: 759px) {
+  body {
+    border: none;
+  }
+}
+
+p {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.title {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 759px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 75%;
+  height: 2px;
+  float: right;
+  background-color: #2a2426;
+  margin-top: 14px;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .title::after {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
