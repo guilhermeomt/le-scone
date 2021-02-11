@@ -417,4 +417,105 @@ img {
     margin-top: 0;
   }
 }
+
+.contact {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 759px) {
+  .contact {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.contact form label {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  display: block;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  height: 40px;
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  padding: 0 5px;
+  border: 2px solid #988c77;
+  color: #2a2426;
+  background-color: transparent;
+  margin-bottom: 1em;
+}
+
+.contact form input[type="text"]:hover, .contact form input[type="text"]:focus,
+.contact form input[type="email"]:hover,
+.contact form input[type="email"]:focus,
+.contact form textarea:hover,
+.contact form textarea:focus {
+  outline: none;
+  border-color: #cbc6b9;
+}
+
+.contact form textarea {
+  height: 120px;
+}
+
+input.button {
+  width: 200px;
+  display: block;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-family: "PT Mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  cursor: pointer;
+  color: #988c77;
+  background-color: transparent;
+  border: 2px solid #988c77;
+  box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+  -webkit-box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+  -moz-box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+input.button:hover {
+  box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+  -webkit-box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+  -moz-box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+}
+
+.contact-info {
+  display: inline-block;
+  color: #988c77;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-info {
+    float: right;
+    text-align: right;
+    margin-top: -3em;
+  }
+}
+
+.contact-map {
+  display: block;
+  box-shadow: 0 0 0 10px #cbc6b9;
+  -webkit-box-shadow: 0 0 0 10px #cbc6b9;
+  -moz-box-shadow: 0 0 0 10px #cbc6b9;
+  clear: both;
+}
+
+.contact-map img {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
