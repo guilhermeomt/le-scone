@@ -5,7 +5,7 @@ A restaurant webpage implemented with HTML and Sass as part of the [Sass course]
 <details>
 <summary>To-do</summary>
 
-   - [ ] Initialize npm
+   - [x] Initialize npm
    - [ ] Set up a workflow automation with Gulp
       - [ ] Install and configure a Sass linter
       - [ ] Compile Sass and minify the CSS output
