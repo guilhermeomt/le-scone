@@ -8,7 +8,7 @@ A restaurant webpage implemented with HTML and Sass as part of the [Sass course]
    - [x] Initialize npm
    - [ ] Set up a workflow automation with Gulp
       - [x] Install and configure a Sass linter
-      - [ ] Compile Sass and minify the CSS output
+      - [x] Compile Sass and minify the CSS output
       - [ ] Set up Browser-sync and file watching
       - [ ] Optimize images
    - [ ] Separate source from build files (```/src``` and ```/dist``` folders) 
