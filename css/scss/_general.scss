@@ -1,9 +1,9 @@
 body {
+  color: $gray;
   background-color: $light-beige;
   border: 10px solid $medium-beige;
-  color: $gray;
   @include d(s) {
-    border: none;
+    border: 0;
   }
 }
 
@@ -24,13 +24,13 @@ img {
   }
 
   &::after {
-    content: '';
     display: block;
+    float: right;
     width: 75%;
     height: 2px;
-    float: right;
-    background-color: $gray;
     margin-top: 14px;
+    background-color: $gray;
+    content: "";
     @include d(m) {
       width: 60%;
     }

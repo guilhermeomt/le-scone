@@ -10,16 +10,16 @@
 }
 
 .intro-info {
-  border-right: 2px solid $gray;
   max-width: 320px;
+  border-right: 2px solid $gray;
 
   p {
     padding-top: 10px;
+  }
 
-    &:first-child {
-      border-bottom: 2px solid $gray;
-      padding-bottom: 10px;
-    }
+  p:first-child {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $gray;
   }
 }
 
@@ -30,12 +30,12 @@
   }
 
   &::after {
-    content: '/ / / /';
     display: block;
     margin-top: 200px;
+    color: $gray;
     font-size: 220px;
     letter-spacing: -90px;
-    color: $gray;
+    content: "/ / / /";
     @include d(m) {
       margin-top: 80px;
       font-size: 160px;
@@ -51,9 +51,9 @@
   display: inline-block;
   width: 12px;
   height: 12px;
+  margin-left: 30px;
   background-color: $green;
   border-radius: 50%;
-  margin-left: 30px;
 }
 
 .intro-photo {

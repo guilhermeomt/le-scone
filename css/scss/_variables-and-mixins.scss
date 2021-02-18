@@ -6,8 +6,8 @@ $gray: #2a2426;
 $green: #1ab912;
 
 // Fonts
-$font-type-1: 'PT Mono', monospace;
-$font-type-2: 'Aref Ruqaa', serif;
+$font-type-1: "PT Mono", monospace;
+$font-type-2: "Aref Ruqaa", serif;
 
 @function em($pixel, $context: 16) {
   @return $pixel / $context + em;
@@ -34,6 +34,4 @@ $font-type-2: 'Aref Ruqaa', serif;
 
 @mixin box-shadow($shadow...) {
   box-shadow: $shadow;
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
 }

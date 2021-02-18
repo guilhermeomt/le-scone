@@ -53,13 +53,13 @@ $s-device: 480px;
 @mixin grid-structure {
   float: left;
   min-height: 1px;
-  margin-left: $gutter / 2;
   margin-right: $gutter / 2;
+  margin-left: $gutter / 2;
   @include d(s) {
-    width: 100%;
     float: none;
-    margin-left: 0;
+    width: 100%;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -70,8 +70,8 @@ $s-device: 480px;
 // Offset classes
 @for $i from 1 through $cols {
   .offset-#{$i} {
-    margin-left: grid($i, offset);
     @extend %offset;
+    margin-left: grid($i, offset);
   }
 }
 
@@ -85,26 +85,26 @@ $s-device: 480px;
 @mixin clearfix {
   &::before,
   &::after {
-    content: "";
-    clear: both;
     display: table;
+    clear: both;
+    content: "";
   }
 }
 
 // Container
 @mixin container {
-  max-width: $l-device;
+  @include clearfix;
   position: relative;
+  max-width: $l-device;
   margin: 0 auto;
   @include d(m) {
     max-width: $m-device;
   }
   @include d(s) {
     max-width: $s-device;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
-  @include clearfix;
 }
 
 .container {
@@ -113,14 +113,14 @@ $s-device: 480px;
 
 // Row
 @mixin row {
-  position: relative;
-  margin-left: -$gutter / 2;
-  margin-right: -$gutter / 2;
-  @include d(s) {
-    margin-left: 0;
-    margin-right: 0;
-  }
   @include clearfix;
+  position: relative;
+  margin-right: -$gutter / 2;
+  margin-left: -$gutter / 2;
+  @include d(s) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .row {
