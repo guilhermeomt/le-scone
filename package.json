@@ -4,7 +4,8 @@
   "description": "A restaurant webpage implemented with HTML and Sass",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "gulp lint:sass",
+    "lint:fix": "npx stylelint css/scss/ --fix"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/guilhermeomt/le-scone/issues"
   },
-  "homepage": "https://github.com/guilhermeomt/le-scone#readme"
+  "homepage": "https://github.com/guilhermeomt/le-scone#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^13.10.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
+  }
 }

@@ -1,0 +1,23 @@
+{
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss"
+    ],
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-rational-order"
+    ],
+    "rules": {
+        "string-quotes": "double",
+        "order/properties-alphabetical-order": null,
+        "selector-no-qualifying-type": [
+            true,
+            {
+                "ignore": [
+                    "attribute",
+                    "class"
+                ]
+            }
+        ]
+    }
+}
