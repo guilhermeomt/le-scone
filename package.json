@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "lint": "gulp lint:sass",
-    "lint:fix": "npx stylelint css/scss/ --fix"
+    "lint:fix": "npx stylelint src/scss/ --fix"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/guilhermeomt/le-scone#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-rename": "^2.0.0",

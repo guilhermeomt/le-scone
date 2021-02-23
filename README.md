@@ -11,12 +11,12 @@ A restaurant webpage implemented with HTML and Sass as part of the [Sass course]
       - [x] Compile Sass and minify the CSS output
       - [x] Set up Browser-sync and file watching
       - [ ] Optimize images
-   - [ ] Separate source from build files (```/src``` and ```/dist``` folders) 
+   - [x] Separate source files from build files (```/src``` and ```/dist``` folders) 
    - [ ] Rewrite stylesheets using BEM methodology
    - [ ] Update README
 </details>
 
 [Live Demo](https://guilhermeomt.github.io/le-scone)
 
-[<img width="700" src="img/preview.jpg">
+[<img width="700" src="src/img/preview.jpg">
 ](https://guilhermeomt.github.io/le-scone)
