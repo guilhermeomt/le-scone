@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
 const del = require("del");
 const sass = require("gulp-sass");
@@ -32,9 +33,10 @@ const deleteDistFolder = () => {
   return del(["dist"]);
 };
 
-const copyImages = () => {
+const optimizeImages = () => {
   return gulp
     .src("src/img/**/*")
+    .pipe(imagemin())
     .pipe(gulp.dest("dist/img"))
     .pipe(browserSync.stream());
 };
@@ -56,7 +58,7 @@ const copyRootFiles = () => {
 const watchSourceFiles = () => {
   gulp.watch("src/scss/*.scss", gulp.series("lint:sass", "build:sass"));
   gulp.watch("src/**/*.html", copyHtml);
-  gulp.watch("src/img/**/*", copyImages);
+  gulp.watch("src/img/**/*", optimizeImages);
   gulp.watch("src/root/*", copyRootFiles);
 };
 
@@ -71,19 +73,19 @@ const startServer = () => {
 gulp.task("lint:sass", lintSass);
 gulp.task("build:sass", buildSass);
 gulp.task("build:clean", deleteDistFolder);
-gulp.task("build:copyImages", copyImages);
+gulp.task("build:images", optimizeImages);
 gulp.task("build:copyHtml", copyHtml);
 gulp.task("build:copyRoot", copyRootFiles);
-gulp.task(
-  "build:copy",
-  gulp.parallel("build:copyImages", "build:copyHtml", "build:copyRoot")
-);
+gulp.task("build:copy", gulp.parallel("build:copyHtml", "build:copyRoot"));
 gulp.task("watch", watchSourceFiles);
 gulp.task("server", startServer);
 gulp.task("lint", gulp.series("lint:sass"));
 gulp.task(
   "build",
-  gulp.series("build:clean", gulp.parallel("build:sass", "build:copy"))
+  gulp.series(
+    "build:clean",
+    gulp.parallel("build:sass", "build:images", "build:copy")
+  )
 );
 gulp.task(
   "default",
