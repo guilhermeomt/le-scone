@@ -3,33 +3,46 @@
   @include d(s) {
     margin-top: 20px;
   }
-}
 
-.logo {
-  margin-bottom: 60px;
-}
+  &__logo {
+    margin-bottom: 60px;
+  }
 
-.intro-info {
-  max-width: 320px;
-  border-right: 2px solid $gray;
+  &__info {
+    max-width: 320px;
+    border-right: 2px solid $gray;
+  }
 
-  p {
+  &__schedule,
+  &__address {
     padding-top: 10px;
   }
 
-  p:first-child {
+  &__schedule {
     padding-bottom: 10px;
     border-bottom: 2px solid $gray;
   }
-}
 
-.intro-phone {
-  color: $dark-beige;
-  @include d(s) {
-    margin-bottom: 40px;
+  &__status {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 30px;
+    border-radius: 50%;
   }
 
-  &::after {
+  &__status--open {
+    background-color: $green;
+  }
+
+  &__phone {
+    color: $dark-beige;
+    @include d(s) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__phone::after {
     display: block;
     margin-top: 200px;
     color: $gray;
@@ -45,18 +58,9 @@
       display: none;
     }
   }
-}
 
-.open {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-left: 30px;
-  background-color: $green;
-  border-radius: 50%;
-}
-
-.intro-photo {
-  width: 100%;
-  border: 10px solid $medium-beige;
+  &__photo {
+    width: 100%;
+    border: 10px solid $medium-beige;
+  }
 }

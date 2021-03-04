@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <title>Le Scone</title>
   <meta name="description" content="Le Scone - Restaurante">
@@ -13,16 +12,24 @@
 <body>
   <main class="container intro">
     <div class="grid-5">
-      <img class="logo" src="img/lescone.png" alt="Le Scone">
-      <div class="intro-info">
-        <p>De Seg. a Sáb. <span class="open"></span>
-        <br>das 7:00h às 18:00h</p>
-        <p>Praia de Botafogo, 300<br>Rio de Janeiro - RJ</p>
+      <img class="intro__logo" src="img/lescone.png" alt="Le Scone">
+      <div class="intro__info">
+        <p class="intro__schedule">
+          De Seg. a Sáb.
+          <span class="intro__status intro__status--open"></span>
+          <br>
+          das 07:00h às 18:00h
+        </p>
+        <p class="intro__address">
+          Praia de Botafogo, 300
+          <br>
+          Rio de Janeiro - RJ
+        </p>
       </div>
-      <p class="intro-phone">+55 021 2412-3333</p>
+      <p class="intro__phone">+55 021 2412-3333</p>
     </div>
     <div class="grid-7">
-      <img class="intro-photo" src="img/foto.png" alt="Foto de Le Scone">
+      <img class="intro__photo" src="img/foto.png" alt="Foto de Le Scone">
     </div>
   </main>
 
@@ -63,11 +70,11 @@
         <div class="row">
           <div class="grid-7">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email">                
+            <input type="email" id="email" name="email">
           </div>
           <div class="grid-5">
             <label for="phone">Telefone</label>
-            <input type="text" id="phone" name="phone">    
+            <input type="text" id="phone" name="phone">
           </div>
         </div>
         <label for="message">Mensagem</label>
