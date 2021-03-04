@@ -5,22 +5,47 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
-}
 
-.menu-item {
-  margin-bottom: 60px;
+  &__content {
+    margin-bottom: 60px;
+    @include d(s) {
+      text-align: center;
+    }
+  }
 
-  h2 {
+  &__image {
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    border: 10px solid $medium-beige;
+    border-radius: 50%;
+    @include d(l) {
+      right: 120px;
+    }
+    @include d(s) {
+      position: relative;
+      width: 150px;
+      margin: 10px auto;
+    }
+  }
+
+  &__title {
     @include type-2(24);
     margin-bottom: 1em;
   }
 
-  li {
+  &__list {
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  &__item {
     @include type-1(18);
     line-height: em(35, 18);
   }
 
-  li span {
+  &__price {
     display: inline-block;
     width: 70px;
     margin-right: 10px;
@@ -31,21 +56,6 @@
     @include d(s) {
       width: auto;
       margin-left: 0;
-    }
-  }
-
-  img {
-    position: absolute;
-    right: 0;
-    margin-top: 50px;
-    border: 10px solid $medium-beige;
-    border-radius: 50%;
-    @include d(l) {
-      right: 120px;
-    }
-    @include d(s) {
-      width: 100px;
-      margin-top: 0;
     }
   }
 }
