@@ -16,7 +16,7 @@ img {
   max-width: 100%;
 }
 
-.title {
+.section-title {
   @include type-1(18);
   text-transform: uppercase;
   @include d(s) {
