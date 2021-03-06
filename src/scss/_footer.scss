@@ -1,16 +1,16 @@
-footer {
+.footer {
   @include box-shadow(0 0 0 10px $gray);
   padding: 20px 0;
   background-color: $gray;
 
-  p {
+  &__copy {
     color: $light-beige;
     @include d(s) {
       text-align: center;
     }
   }
 
-  a img {
+  &__icon {
     float: right;
     @include d(s) {
       float: none;

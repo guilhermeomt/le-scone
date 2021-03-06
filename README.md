@@ -12,7 +12,7 @@ A restaurant webpage implemented with HTML and Sass as part of the [Sass course]
       - [x] Set up Browser-sync and file watching
       - [x] Optimize images
    - [x] Separate source files from build files (```/src``` and ```/dist``` folders) 
-   - [ ] Rewrite stylesheets using BEM methodology
+   - [x] Rewrite stylesheets using BEM methodology
    - [ ] Update README
 </details>
 
